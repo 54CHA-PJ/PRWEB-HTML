@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowed Books</title>
+    <link rel="stylesheet" href="styles/page.css">
+</head>
+<body class="body">
+    <form action="home.html" method="GET">
+        <button type="home">HOME</button>
+    </form>
+    <div class="container">
+        <h1>User's Borrowed Books</h1>
+        <h2>Firstname Lastname</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Date</th>
+                    <th>ISBN</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2022-01-01</td>
+                    <td>ISBN 1234567890</td>
+                    <td>
+                        <img src="assets/missing.png" alt="Not Returned" class="icon">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="borrowBook" method="POST">
+            <label for="bookId">Book ID:</label>
+            <input type="text" id="bookId" name="bookId">
+            <button type="submit">Borrow Book</button>
+        </form>
+    </div>
+</body>
+</html>
