@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="styles/page.css">
+</head>
+<body class="body">
+    <form action="home.html" method="GET">
+        <button type="home">HOME</button>
+    </form>
+    <div class="container">
+        <h1>User Database</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sacha</td>
+                    <td>sachacruzabsi@gmail.com</td>
+                    <td>
+                        <form action="editUser" method="POST">
+                            <button type="submit">
+                                <img src="assets/edit.png" alt="Edit" class="icon">
+                            </button>
+                            <button type="submit">
+                                <img src="assets/delete.png" alt="Delete" class="icon">
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Hudson</td>
+                    <td>sachacruzabsi2@gmail.com</td>
+                    <td>
+                        <form action="editUser" method="POST">
+                            <button type="submit">
+                                <img src="assets/edit.png" alt="Edit" class="icon">
+                            </button>
+                            <button type="submit">
+                                <img src="assets/delete.png" alt="Delete" class="icon">
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Diego</td>
+                    <td>sachacruzabsi3@gmail.com</td>
+                    <td>
+                        <form action="editUser" method="POST">
+                            <button type="submit">
+                                <img src="assets/edit.png" alt="Edit" class="icon">
+                            </button>
+                            <button type="submit">
+                                <img src="assets/delete.png" alt="Delete" class="icon">
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+        </table>
+    </div>
+</body>
+</html>

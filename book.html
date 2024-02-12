@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Book</title>
+    <link rel="stylesheet" href="styles/page.css">
+</head>
+<body class="body">
+    <form action="home.html" method="GET">
+        <button type="home">HOME</button>
+    </form>
+    <div class="container">
+        <h1>Edit Book Information</h1>
+        <form action="updateBook" method="POST">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Book ID:</td>
+                        <td><input type="text" name="bookId"></td>
+                    </tr>
+                    <tr>
+                        <td>Title:</td>
+                        <td><input type="text" name="title"></td>
+                    </tr>
+                    <tr>
+                        <td>Author:</td>
+                        <td><input type="text" name="author"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>

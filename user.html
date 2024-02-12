@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="styles/page.css">
+</head>
+<body class="body">
+    <form action="home.html" method="GET">
+        <button type="home">HOME</button>
+    </form>
+    <div class="container">
+        <h1>Edit User Information</h1>
+        <form action="updateUser" method="POST">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>User ID:</td>
+                        <td><input type="text" name="userId"></td>
+                    </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
