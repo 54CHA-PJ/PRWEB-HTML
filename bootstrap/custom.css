@@ -1,0 +1,25 @@
+.body_consolas {
+    font-family: Consolas;
+}
+
+.title_consolas {
+    font-family: Consolas;
+    color: white;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.btn-block {
+    display: inline-block;
+    width: 50%;
+    margin: auto; /* Center the buttons horizontally */
+}
+
+.list-group-item {
+    border: none;
+    display: flex; /* Make the list items flex containers */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+}
