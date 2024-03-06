@@ -51,13 +51,14 @@
                                 <form action="editBook" method="POST"> 
                                     <button 
                                         class="btn btn-light-primary"
-                                        name="edit">
+                                        name="edit"
+                                        onClick="editBook2(1, this); return false;">
                                         <img src="assets/edit.png" alt="Edit" class="icon">
                                     </button>
                                     <button 
                                         class="btn btn-light-primary"
                                         name="delete"
-                                        onClick="deleteBook(1,this); return false;">
+                                        onClick="deleteBook2(1,this); return false;">
                                         <img src="assets/delete.png" alt="Delete" class="icon">
                                     </button>
                                 </form>
@@ -70,10 +71,16 @@
                             <td>ISBN 0987654321</td>
                             <td>
                                 <form action="editBook" method="POST">
-                                    <button type="submit" class="btn btn-light-primary">
+                                    <button 
+                                        class="btn btn-light-primary"
+                                        name="edit"
+                                        onClick="editBook2(2, this); return false;">
                                         <img src="assets/edit.png" alt="Edit" class="icon">
                                     </button>
-                                    <button type="submit" class="btn btn-light-primary">
+                                    <button 
+                                        class="btn btn-light-primary"
+                                        name="delete"
+                                        onClick="deleteBook2(2,this); return false;">
                                         <img src="assets/delete.png" alt="Delete" class="icon">
                                     </button>
                                 </form>
@@ -86,10 +93,16 @@
                             <td>ISBN 9876543210</td>
                             <td>
                                 <form action="editBook" method="POST">
-                                    <button type="submit" class="btn btn-light-primary">
+                                    <button 
+                                        class="btn btn-light-primary"
+                                        name="edit"
+                                        onClick="editBook2(3, this); return false;">
                                         <img src="assets/edit.png" alt="Edit" class="icon">
                                     </button>
-                                    <button type="submit" class="btn btn-light-primary">
+                                    <button 
+                                        class="btn btn-light-primary"
+                                        name="delete"
+                                        onClick="deleteBook2(3,this); return false;">
                                         <img src="assets/delete.png" alt="Delete" class="icon">
                                     </button>
                                 </form>
