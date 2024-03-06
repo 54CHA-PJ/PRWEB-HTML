@@ -9,10 +9,12 @@ function deleteBook(bookID, buttonRef) {
             },
             success: function (theResult) {
                 var ref = buttonRef;
+                // Find the closest ancestor that is a table row.
                 while ((ref !== null) && (ref.tagName !== "TR")) {
                     ref = ref.parentElement;
                 }
-                if (ref !== null) {
+                // If a table row was found, remove it from the DOM.
+                if (ref !== null) { 
                     ref.parentElement.removeChild(ref);
                 }
             },
