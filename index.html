@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script> <!-- Include your JavaScript file -->
 </head>
 <body class="bg-dark body_consolas">
     <div class="container mt-5">
@@ -18,7 +19,7 @@
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="col-6">
-                                <form action="login" method="POST">
+                                <form onsubmit="validateForm(event)">
                                     <div class="form-group">
                                         <label for="login">Username:</label>
                                         <input type="text" id="login" name="login" placeholder="Enter your username" required class="form-control">
