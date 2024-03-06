@@ -5,77 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    
 </head>
-<body class="body">
-    <form action="home.html" method="GET">
-        <button type="home">HOME</button>
-    </form>
-    <div class="container">
-        <h1>Book Database</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>ISBN</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Book Title 1</td>
-                    <td>Author 1</td>
-                    <td>ISBN 1234567890</td>
-                    <td>
-                        <form action="editBook" method="POST">
-                            <button type="submit">
-                                <img src="assets/edit.png" alt="Edit" class="icon">
-                            </button>
-                            <button type="submit">
-                                <img src="assets/delete.png" alt="Delete" class="icon">
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Book Title 2</td>
-                    <td>Author 2</td>
-                    <td>ISBN 0987654321</td>
-                    <td>
-                        <form action="editBook" method="POST">
-                            <button type="submit">
-                                <img src="assets/edit.png" alt="Edit" class="icon">
-                            </button>
-                            <button type="submit">
-                                <img src="assets/delete.png" alt="Delete" class="icon">
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Book Title 3</td>
-                    <td>Author 3</td>
-                    <td>ISBN 9876543210</td>
-                    <td>
-                        <form action="editBook" method="POST">
-                            <button type="submit">
-                                <img src="assets/edit.png" alt="Edit" class="icon">
-                            </button>
-                            <button type="submit">
-                                <img src="assets/delete.png" alt="Delete" class="icon">
-                            </button>
-                        </form>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<body class="bg-dark body_consolas">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand custom-brand" href="home.html">OFL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="users.html">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link" href="books.html">Books</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <h1 class="mb-5 text-center title_consolas">Book Database</h1>
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Book Title 1</td>
+                            <td>Author 1</td>
+                            <td>ISBN 1234567890</td>
+                            <td>
+                                <form action="editBook" method="POST">
+                                    <button type="submit" class="btn btn-light-primary">
+                                        <img src="assets/edit.png" alt="Edit" class="icon">
+                                    </button>
+                                    <button type="submit" class="btn btn-light-primary">
+                                        <img src="assets/delete.png" alt="Delete" class="icon">
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Book Title 2</td>
+                            <td>Author 2</td>
+                            <td>ISBN 0987654321</td>
+                            <td>
+                                <form action="editBook" method="POST">
+                                    <button type="submit" class="btn btn-light-primary">
+                                        <img src="assets/edit.png" alt="Edit" class="icon">
+                                    </button>
+                                    <button type="submit" class="btn btn-light-primary">
+                                        <img src="assets/delete.png" alt="Delete" class="icon">
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Book Title 3</td>
+                            <td>Author 3</td>
+                            <td>ISBN 9876543210</td>
+                            <td>
+                                <form action="editBook" method="POST">
+                                    <button type="submit" class="btn btn-light-primary">
+                                        <img src="assets/edit.png" alt="Edit" class="icon">
+                                    </button>
+                                    <button type="submit" class="btn btn-light-primary">
+                                        <img src="assets/delete.png" alt="Delete" class="icon">
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+            <a href="home.html" class="btn btn-warning">HOME</a>
+        </div>
     </div>
 </body>
 </html>
